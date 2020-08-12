@@ -1,0 +1,10 @@
+digraph G{ 
+ node[shape="box"];
+node0x55739997c280[label="3"]
+node0x55739997c260[label="10"]
+node0x55739997c2a0[label="25"]
+node0x55739997c260->node0x55739997c2a0;
+ node0x55739997c2a0->node0x55739997c260;
+node0x55739997c280->node0x55739997c260;
+ node0x55739997c260->node0x55739997c280;
+}
