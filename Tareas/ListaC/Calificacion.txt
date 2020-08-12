@@ -1,0 +1,17 @@
+----------------Errores ------------------------
+1) Tu comentario dice que la eliminacion inicia en 0 pero cuando lo ingreso da segmentation fault
+
+2) No noto diferencia al eliminar porque solo rompes un enlace y no eliminas el otro.
+
+3) No elimina pero la logica esta bien
+
+----------------Recomendaciones-------------------
+
+----------------Notas-------------------------
+
+Grafica 20/20
+Eliminar 30/40
+Get 40/40
+
+
+
