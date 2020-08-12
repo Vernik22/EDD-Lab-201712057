@@ -13,6 +13,8 @@ int main(){
     add(l,c);
     imprimir(l);
     generar(l);
+    eliminarNodo(l,1,NULL);
+    get(l,1,NULL);
     Liberar(l);
     free(l);
     return 0;

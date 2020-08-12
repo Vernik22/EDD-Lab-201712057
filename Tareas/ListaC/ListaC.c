@@ -115,7 +115,14 @@ if(l->head==NULL){
  eliminarNodo(l, posicion-1,elim->derecha );
 
 }
+/*al igual que eliminar las pisicion empiezan en 0*/
+NodoC* get( ListaC* l,int posicion, NodoC* actual){
 
-NodoC* get(ListaC* l, int posicion){
-
+if(actual == NULL){
+         actual = l->head;
+    }
+if(posicion == 0){
+return actual;
+    }
+get(l, posicion-1,actual->derecha );
 } 
