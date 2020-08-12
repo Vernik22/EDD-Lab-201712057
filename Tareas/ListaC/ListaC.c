@@ -62,7 +62,7 @@ void generar(ListaC* l){
         return;
     }
     char cad[1024];
-    sprintf(cad,"digraph G{ \n node[shape=\"box\"];\n");
+    sprintf(cad,"digraph G{ \n node[shape=triangle];\n");
     fputs(cad,fp);
     NodoC* aux;
     aux=l->head;
@@ -78,10 +78,10 @@ void guardarRecursivo(NodoC* aux,FILE* fp,char c[]){
     }else{
         if(aux->derecha!=NULL){
             
-            sprintf(c,"node%p[label=\"%i\"]\n",&(*aux),aux->val);
+            sprintf(c,"node%p[label=\"%i\", color= red, style= filled]\n",&(*aux),aux->val);
             fputs(c,fp);
             guardarRecursivo(aux->derecha,fp,c);
-            sprintf(c,"node%p->node%p;\n node%p->node%p;\n",&(*aux),&(*aux->derecha),&(*aux->derecha),&(*aux));
+            sprintf(c,"node%p->node%p;\n node%p->node%p [color= blue];\n",&(*aux),&(*aux->derecha),&(*aux->derecha),&(*aux));
             fputs(c,fp);
         }else{
             sprintf(c,"node%p[label=\"%i\"]\n",&(*aux),aux->val);
